@@ -1,32 +1,19 @@
 #include <stdio.h>
 
-int main01()
+int main02()
 {
-    int score = 0;
+    int n = 0;
+    int sum = 0; 
+    int i;
 
-    printf("점수 입력: ");
-    scanf("%d", &score);
+    printf("정수를 하나 입력하시오: ");
+    scanf("%d", &n);
 
-    if(score >= 90)
+    for( i = 1; i <= n; i++ )
     {
-        printf("A\n");
+        sum += i;
     }
-    else if(score >= 80)
-    {
-        printf("B\n");
-    }
-    else if(score >= 70)
-    {
-        printf("C\n");
-    }
-    else if(score >= 60)
-    {
-        printf("D\n");
-    }
-    else
-    {
-        printf("F\n");
-    }
-    
+
+    printf("1부터 n까지의 합: %d", sum);
     return 0;
 }
