@@ -1,12 +1,17 @@
 
 #include<stdio.h>
 int main(){
-    int a,sum=0;
-    scanf("%d",&a);
-    for(int i=0;i<=a;i++){
+    
+    int score[5];
+    
+    for(int i=0,i<5,i++){
 
-     sum+=i;
+        scanf(%d,&score[i]);
     }
-    printf("%d",sum);
+    for(int i=0,i<5,i++){
+
+        printf("%d",score[i]);
+    }
+
     return 0;
 }
